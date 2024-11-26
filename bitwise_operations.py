@@ -24,7 +24,7 @@ def filter_numbers(numbers, threshold):
     return [num for num in numbers if num > threshold]
 
 if __name__ == "__main__":
-    # Check if the required arguments are provided
+    
     if len(sys.argv) < 3:
         print("Usage: python3 bitwise_operations.py <integers> <threshold>")
         print("Example: python3 bitwise_operations.py '3,5,7,9' 4")
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     input_data = sys.argv[1]
     threshold = int(sys.argv[2])
 
-    # Validate input and perform operations
+    
     numbers = validate_input(input_data)
     and_result, or_result, xor_result = perform_bitwise_operations(numbers)
     filtered_numbers = filter_numbers(numbers, threshold)
